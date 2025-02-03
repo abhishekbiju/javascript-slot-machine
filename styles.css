@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    margin: 0;
+  }
+  
+  #game-container {
+    text-align: center;
+    width: 400px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .input-container, .bet-container {
+    margin-bottom: 20px;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 5px;
+    width: 120px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .reel {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+    background-color: #ddd;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 80px;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .reel:hover {
+    background-color: #f1f1f1;
+    transform: scale(1.1);
+  }
+  
+  .winnings-container {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #4CAF50;
+  }
+  
+  .play-again-container {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  .balance-container {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="number"] {
+    width: 120px;
+  }
+  

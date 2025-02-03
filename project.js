@@ -6,6 +6,26 @@
 // 6. give the user their winnings
 // 7. play again
 
+const express = require("express");
+const path = require("path");
+
+const app = express();
+const port = 3000; // You can choose any port you'd like
+
+// Serve static files (HTML, CSS, JS)
+app.use(express.static(path.join(__dirname)));
+
+// Define a basic route
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "index.html")); // Make sure your HTML file is named correctly
+});
+
+// Start the server
+app.listen(port, () => {
+  console.log(`Server is running on http://localhost:${port}`);
+});
+
+
 const prompt = require("prompt-sync")();
 
 const ROWS = 3;
